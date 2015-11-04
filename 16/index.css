@@ -1,0 +1,88 @@
+#mainmenu16 {
+    overflow: hidden;
+    margin: auto;
+    clear: both;
+    list-style: none outside none;
+    padding: 0;
+}
+
+#mainmenu16 li {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 96%;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    height: 106px;
+}
+
+#mainmenu16 li a {
+    display: block;
+    height: 100%;
+    color: #FFF;
+}
+
+#mainmenu16 li a img {
+    width: 68%;
+    float: left;
+    border: 0;
+}
+
+#mainmenu16 li:nth-child(2n+2) a img {
+    float: right;
+}
+
+#mainmenu16 li a p {
+    width: 32%;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    color: #FFF;
+    margin: 0;
+}
+
+#mainmenu16 li:nth-child(2n+1) a p {
+    background-color: #0099ff;
+}
+
+#mainmenu16 li:nth-child(2n+2) a p {
+    background-color: #f6ad10;
+    position: absolute;
+    left: 0px;
+}
+
+#mainmenu16 li a p b {
+    display: block;
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mainmenu16 li a p span {
+    display: block;
+    padding: 0 5px;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mainmenu16 li a p em {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background: url(PIX2.png) no-repeat;
+    background-size: 100%;
+}

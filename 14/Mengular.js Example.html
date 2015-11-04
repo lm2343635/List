@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///Users/limeng/Documents/workspace/Mengular/WebContent/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mengular.js Example</title>
+		<link href="file:///Users/limeng/Documents/workspace/Mengular/WebContent/static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="file:///Users/limeng/Documents/workspace/Mengular/WebContent/static/css/mengular.css" rel="stylesheet">
+		<link href="file:///Users/limeng/Documents/workspace/Mengular/WebContent/static/css/index.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="./Mengular.js Example_files/jquery.min.js"></script>	
+		<script src="./Mengular.js Example_files/bootstrap.min.js"></script>
+		<script src="./Mengular.js Example_files/mengular.js"></script>
+		<script src="./Mengular.js Example_files/index.js"></script>	
+	</head>
+	<body>
+		<div id="main-container" class="container">
+			<div class="alert alert-success" role="alert">Megular Function 1</div>
+			<table id="student-table1" class="table">
+				<thead>
+					<tr>
+						<th>Student Number</th>
+						<th>Name</th>
+						<th>Class Name</th>
+						<th>Country</th>
+						<th>Province</th>
+						<th>City</th>
+						<th>Birthday</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="38dhe73d8d3en8e8n3duc3">
+						<td>20111234</td>
+						<td>Tom</td>
+						<td>Computer Science and Technology 1</td>
+						<td>China</td>
+						<td>Hubei</td>
+						<td>Jingmen</td>
+						<td>May, 15th, 1994</td>
+						<td><button class="btn btn-danger btn-xs">Delete</button></td>
+					</tr>
+				
+					<tr id="njww8jx8dy88xxxuixiwnw">
+						<td>20111235</td>
+						<td>Tim</td>
+						<td>Computer Science and Technology 2</td>
+						<td>Japan</td>
+						<td>Kanagawa</td>
+						<td>Yokohama</td>
+						<td>September, 20th, 1994</td>
+						<td><button class="btn btn-danger btn-xs">Delete</button></td>
+					</tr>
+				
+					<tr id="399dix38zj28x9xwiwjs8x">
+						<td>20111236</td>
+						<td>Jack</td>
+						<td>Computer Science and Technology 3</td>
+						<td>USA</td>
+						<td>CA</td>
+						<td>San Francisco</td>
+						<td>March, 14th, 1993</td>
+						<td><button class="btn btn-danger btn-xs">Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="alert alert-success" role="alert">Megular Function 2</div>
+			<table id="student-table2" class="table">
+				<thead>
+					<tr>
+						<th>Student Number</th>
+						<th>Name</th>
+						<th>Class Name</th>
+						<th>Country</th>
+						<th>Province</th>
+						<th>City</th>
+						<th>Birthday</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="${id}$" class="mengular-template templateClass1">
+						<td>${number}$</td>
+						<td>${name}$</td>
+						<td>${classname}$</td>
+						<td>${hometown.country}$</td>
+						<td>${hometown.province}$</td>
+						<td>${hometown.city}$</td>
+						<td>${birthday}$</td>
+						<td><button class="btn btn-success btn-xs btn-delete">Delete</button></td>
+					</tr>
+					<tr id="${id}$" class="mengular-template templateClass2 success">
+						<td>${number}$</td>
+						<td>${name}$</td>
+						<td>${classname}$</td>
+						<td>${hometown.country}$</td>
+						<td>${hometown.province}$</td>
+						<td>${hometown.city}$</td>
+						<td>${birthday}$</td>
+						<td><button class="btn btn-danger btn-xs btn-delete">Delete</button></td>
+					</tr>
+				<tr id="38dhe73d8d3en8e8n3duc3" class="templateClass2 success">
+						<td>20111234</td>
+						<td>Tom</td>
+						<td>Computer Science and Technology 1</td>
+						<td>China</td>
+						<td>Hubei</td>
+						<td>Jingmen</td>
+						<td>May, 15th, 1994</td>
+						<td><button class="btn btn-danger btn-xs btn-delete">Delete</button></td>
+					</tr><tr id="njww8jx8dy88xxxuixiwnw" class="templateClass1">
+						<td>20111235</td>
+						<td>Tim</td>
+						<td>Computer Science and Technology 2</td>
+						<td>Japan</td>
+						<td>Kanagawa</td>
+						<td>Yokohama</td>
+						<td>September, 20th, 1994</td>
+						<td><button class="btn btn-success btn-xs btn-delete">Delete</button></td>
+					</tr><tr id="399dix38zj28x9xwiwjs8x" class="templateClass1">
+						<td>20111236</td>
+						<td>Jack</td>
+						<td>Computer Science and Technology 3</td>
+						<td>USA</td>
+						<td>CA</td>
+						<td>San Francisco</td>
+						<td>March, 14th, 1993</td>
+						<td><button class="btn btn-success btn-xs btn-delete">Delete</button></td>
+					</tr></tbody>
+			</table>
+		</div>
+	
+
+</body></html>

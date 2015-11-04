@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="menu2" class="top_bar">
+			<nav>
+				<ul class="top_menu">
+					<input type="checkbox" id="plug-btn" class="plug-menu themeStyle">
+					<li class="themeStyle out" style="background:#FF0000"> 
+						<a href="#">
+							<img src="http://u.weixinbiz.cn/tpl/User/default/common/images/photo/plugmenu205.png">
+							<label>资质荣誉</label>
+						</a>
+					</li>
+					<li class="themeStyle out" style="background:#FF0000"> 
+						<a href="#">
+							<img src="http://u.weixinbiz.cn/tpl/User/default/common/images/photo/plugmenu81.png">
+							<label>售后服务</label>
+						</a>
+					</li>
+					<li class="themeStyle out" style="background:#FF0000"> 
+						<a href="#">
+							<img src="http://u.weixinbiz.cn/tpl/User/default/common/images/photo/plugmenu17.png">
+							<label>在线咨询</label>
+						</a>
+					</li>          
+				</ul>
+			</nav>
+			<script type="text/javascript">
+				$("#plug-btn").click(function(){
+					var li = $(this).parents('ul').find('li');
+					if(li.attr("class") == "themeStyle on"){
+						li.removeClass("themeStyle on");
+						li.addClass("themeStyle out");
+					}else{
+						li.removeClass("themeStyle out");
+						li.addClass("themeStyle on");
+					}
+				});
+			</script>
+		</div>
+	</body>
+</html>

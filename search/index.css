@@ -1,0 +1,28 @@
+#search-form div {
+	margin-bottom: 5px;
+}
+
+#search-button {
+	width: 100%
+}
+
+#data-list tbody {
+	font-size: 12px;
+}
+
+#data-list tbody:hover {
+	cursor: pointer;
+}
+
+#item-panel {
+	display: none;
+}
+
+#item-panel .panel-body .row div {
+	margin: 5px 0;
+}
+
+#item-panel .panel-body .row {
+	display: none;
+}
+

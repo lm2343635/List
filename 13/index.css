@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.mina {
+    overflow: hidden;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 8px 5px 0 6px;
+}
+
+.menu {
+    background: #FFF;
+    overflow: hidden;
+}
+
+.menu li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.menu li:nth-child(8n+1) a {
+    background: rgba(54,161,219,1);
+}
+
+.menu li:nth-child(8n+2) a {
+    background: rgba(103,140,225,1);
+}
+
+.menu li:nth-child(8n+3) a {
+    background: rgba(140,103,223,1);
+}
+
+.menu li:nth-child(8n+4) a {
+    background: rgba(132,208,24,1);
+}
+
+.menu li:nth-child(8n+5) a {
+    background: rgba(20,199,96,1);
+}
+
+.menu li:nth-child(8n+6) a {
+    background: rgba(243,182,19,1);
+}
+
+.menu li:nth-child(8n+7) a {
+    background: rgba(255,138,74,1);
+}
+
+.menu li:nth-child(8n+8) a {
+    background: rgba(252,83,102,1);
+}
+
+.menu li a {
+    color: #fff;
+    display: block;
+    height: 70px;
+    padding-top: 5px;
+    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu li span {
+    display: block;
+    font-size: 32px;
+    height: 40px;
+    line-height: 42px;
+    border-radius: 10%;
+    width: 54px;
+    margin: 0 auto;
+    color: #FFF;
+}
+
+
+.menu li a div {
+    height: 22px;
+    line-height: 22px;
+    color: #FFF;
+    border-radius: 0 0 7px 7px;
+    font-size: 14px;
+}
+
+article.siteList {
+    padding: 0 5px;
+}
+
+.siteList section {
+    margin: 10px 0 0;
+    background: #fff;
+}
+
+.siteList section h3 {
+    display: block;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.siteList section p {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    text-indent: 2em;
+    color: #666;
+}
+
+.siteList section h3 a {
+    display: block;
+    padding-left: 10px;
+    color: #333;
+    font-size: 18px;
+    height: 40px;
+    line-height: 44px;
+    position: relative;
+    text-decoration: none;
+}
+
+.siteList section h3 a .arrow {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.siteList section h3 a .arrow::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    right: 5px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.siteList section.contactus ul {
+    font-size: 16px;
+    padding: 4px 0;
+}
+
+.siteList section.contactus ul li {
+    position: relative;
+    padding: 8px 0 8px 10px;
+    color: #666;
+}
+
+.tel, .msg {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 29px;
+    background: url(mobicon.png) 0 -35px no-repeat;
+    background-size: 24px;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.msg {
+    right: 10px;
+    background-position: 0 -60px;
+}
+
+.addr a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.addr a::after {
+    content: "";
+    width: 24px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background: url(mobicon.png) 0 -94px no-repeat;
+    background-size: 24px;
+    margin-top: -11px;
+}
+
+.siteList section.product ul {
+    padding: 15px 5px 10px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.siteList section.product ul li {
+    display: inline-block;
+    margin-bottom: 15px;
+    display: table-cell;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.siteList section.product ul li a {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.siteList section.product ul li a img {
+    max-width: 100%;
+}
+
+.siteList section.product ul li a span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    height: 20px;
+}

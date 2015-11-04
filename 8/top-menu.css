@@ -1,0 +1,95 @@
+.top_bar {
+    position: fixed;
+    z-index: 900;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: Helvetica, Tahoma, Arial, Microsoft YaHei, sans-serif;
+}
+
+.top_menu {
+    display: -webkit-box;
+    border-top: 1px solid #3D3D46;
+    display: block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    height: 48px;
+    display: -webkit-box;
+    display: box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: horizontal;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#524945), to(#48403c), color-stop(60%, #524945));
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset;
+    list-style: none;
+}
+
+.top_bar .top_menu>li {
+    -webkit-box-flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.top_bar .top_menu>li {
+    -webkit-box-flex: 1;
+    height: 35px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.1)),color-stop(50%,rgba(255,255,255,0.8)), to(rgba(255,255,255,0.1)));
+    -webkit-background-size: 1px 80%;
+    background-size: 1px 80%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* text-align: center; */
+}
+
+.top_bar .top_menu>li.home {
+    max-width: 70px;
+}
+
+.top_menu li:first-child {
+    background: none;
+}
+
+.top_bar .top_menu>li.home a {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    border-radius: 60px;
+    position: relative;
+    top: -14px;
+    left: 5px;
+    background: url('home.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.top_bar li:first-child a {
+    display: block;
+}
+.top_bar .top_menu>li>a {
+    height: 48px;
+    margin-right: 1px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-flex: 1;
+}
+
+.top_bar .top_menu>li>a img {
+    padding: 3px 0 0 0;
+    height: 24px;
+    width: 24px;
+    color: #fff;
+    line-height: 48px;
+    vertical-align: middle;
+}
+
+.top_bar .top_menu>li>a label {
+    overflow: hidden;
+    margin: 0 0 0 0;
+    font-size: 12px;
+    display: block !important;
+    line-height: 18px;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#xwjk-navbar {
+	background: #333;
+}
+
+#xwjk-navbar .navbar-header {
+	height: 50px;
+	background: #333;
+}
+
+#xwjk-navbar .navbar-header .navbar-header-icon {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin: 5px;
+}
+
+#xwjk-navbar .navbar-header .navbar-header-icon img {
+	height: 100%;
+	width: 100%;
+}
+
+#xwjk-navbar .navbar-header .navbar-header-title {
+	color: #9d9d9d;
+	font-size: 23px;
+	height: 40px;
+	float: left;
+	margin: 5px;
+	line-height: 40px;
+}
+
+#xwjk-navbar .navbar-header .navbar-header-button {
+	height: 30px;
+	width: 40px;
+	background: #555555;
+	float: right;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+#xwjk-navbar .navbar-header .navbar-header-button .icon-bar {
+	display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    margin: 5.5px;
+}
+
+#xwjk-navbar .navbar-collapse {
+	display: none;
+	background: #333333;
+}
+
+#xwjk-navbar .navbar-collapse .navbar-nav {
+	list-style-type: none;
+	margin: 0;
+	border-top: 1px #444 solid;
+}
+
+#xwjk-navbar .navbar-collapse .navbar-nav li {
+	height: 16px;
+	padding: 10px 0px;
+}
+
+#xwjk-navbar .navbar-collapse .navbar-nav a {
+	color: #9d9d9d;
+	text-decoration: none;
+	height: 100%;
+	padding-top: 5px;
+}

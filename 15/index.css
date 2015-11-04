@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+}
+
+.weipod-content {
+	margin: 0px;
+	position: relative;
+	min-height: 350px;
+}
+
+.tpl-catelist-item:nth-child(5n+1) a {
+	background-color: #EE6297;
+}
+
+.tpl-catelist-item:nth-child(5n+2) a {
+	background-color: #61ACDC;
+}
+
+.tpl-catelist-item:nth-child(5n+3) a {
+	background-color: #69D0CF;
+}
+
+.tpl-catelist-item:nth-child(5n+4) a {
+	background-color: #96CBF3;
+}
+
+.tpl-catelist-item:nth-child(5n+5) a {
+	background-color: #FF8FB5;
+}
+
+
+.weipod_item {
+	display: block;
+	color: #fff!important;
+	font-size: 18px;
+	overflow: hidden;
+	height: 100px;
+	box-shadow: 0 1px 5px #B18F74;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.weipod_img {
+	float: left;
+	width: 160px;
+	height: 100px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.weipod_img img {
+	width: 160px;
+}
+
+.weipod_text {
+	float: left;
+	padding: 5px 0px 5px 10px;
+	width: 130px;
+	height: 90px;
+	overflow: hidden;
+	position: relative;
+	background-image: url(icon.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.weipod_title {
+	font-size: 19px;
+	font-weight: bold;
+	display: block;
+}
+
+.weipod_info {
+	display: block;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.shadow {
+	height: 6px;
+	border-radius: 0 0 5px 5px;
+	background: rgba(0,0,0,0.1);
+	margin: -16px 10px 0;
+	position: relative;
+}

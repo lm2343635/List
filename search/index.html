@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+		<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="http://api.fczm.pw/static/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+		<link href="http://api.fczm.pw/static/css/mengular.css" rel="stylesheet">
+		<link href="index.css" rel="stylesheet" >
+		<script src="http://api.fczm.pw/static/js/jquery.min.js"></script>
+		<script src="http://api.fczm.pw/static/js/bootstrap.min.js"></script>
+		<script src="http://api.fczm.pw/static/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="http://api.fczm.pw/static/js/bootstrap-datetimepicker.zh-CN.js"></script>
+        <script src="http://api.fczm.pw/static/js/jQuery.md5.js"></script>
+        <script src="http://api.fczm.pw/static/js/mengular.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h2>武汉“8+1”城市圈农村产权交易平台</h2>
+			</div>
+			<div id="search-panel" class="panel panel-default">
+				<div class="panel-heading">查询系统</div>
+				<div class="panel-body">
+					<div id="search-form" class="row">
+						<div class="col-xs-12 col-md-6 col-lg-3">				
+							<div class="input-group">
+		                        <span class="input-group-addon"><i class="fa fa-calendar fa-lg"></i></span>
+		                        <input id="start-date" type="text" class="form-control" placeholder="起始日期" readonly >
+	                    	</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<div class="input-group">
+		                        <span class="input-group-addon"><i class="fa fa-calendar-minus-o fa-lg"></i></span>
+		                        <input id="end-date" type="text" class="form-control" placeholder="结束日期" readonly >
+	                    	</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3">
+							<div class="input-group">
+		                        <span class="input-group-addon"><i class="fa fa-info-circle fa-lg"></i></span>
+		                        <select id="type" class="form-control">
+									<option value="">选择公告类型</option>
+									<option value="1">挂牌公告</option>
+									<option value="4">成交公告</option>
+									<!-- <option value="0">所有类型公告</option>					
+									<option value="2">招标公告</option>
+									<option value="3">中标公告</option>
+									<option value="5">遗失公告</option>
+									<option value="6">竞价公告</option>
+									<option value="7">指标成交公告</option> -->
+								</select>
+	                    	</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-2">
+							<div class="input-group">
+		                        <span class="input-group-addon"><i class="fa fa fa-map-pin fa-lg"></i></span>
+		                        <select id="city" class="form-control">
+									<option value="">选择城市</option>
+									<option value="WUH">武汉市</option>
+									<option value="JMS">荆门市</option>
+									<option value="HSI">黄石市</option>
+									<option value="EZS">鄂州市</option>
+									<option value="XGE">孝感市</option>
+									<option value="HGE">黄冈市</option>
+									<option value="XNS">咸宁市</option>
+									<option value="XNT">仙桃市</option>
+									<option value="QNJ">潜江市</option>
+									<option value="TMS">天门市</option>
+								</select>
+	                    	</div>
+						</div>
+						<div class="col-xs-12 col-md-12 col-lg-1">
+							<button id="search-button" class="btn btn-success">搜索</button>
+						</div>
+					</div>
+				</div>
+				<table id="data-list" class="table table-hover">
+					<thead>
+						<tr>
+							<th>项目编号</th>
+							<th>项目名称</th>
+							<th>公告类型</th>
+							<th>挂牌时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="${ProjectCode}$" class="mengular-template data-template">
+							<td>${ProjectCode}$</td>
+							<td>${NoticeTittle}$</td>
+							<td>${NoticeType}$</td>
+							<td>${UpdateDate}$</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="item-panel" class="panel panel-default">
+				<div class="panel-heading">
+					<span id="NoticeTittle"></span>
+					<button id="item-panel-back" class="btn btn-info btn-xs pull-right">返回</button>
+				</div>
+				<div class="panel-body">
+					<div id="notice-type-1" class="row">
+						<div class="col-xs-4 col-md-2">项目编号：</div>
+						<div id="ProjectCode1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">项目类别：</div>
+						<div id="TransVariety1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">挂牌起始时间：</div>
+						<div id="StartDate1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">挂牌截止时间：</div>
+						<div id="EndDate1" class="col-xs-8 col-md-4"></div>
+						<div class="col-xs-4 col-md-2">转出方：</div>
+						<div id="Transferor1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">所在区域：</div>
+						<div id="LocatArea1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转面积：</div>
+						<div id="RollOutArea1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转方式：</div>
+						<div id="RollOutMode1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">转出期限：</div>
+						<div id="RollOutYear1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">挂牌价格：</div>
+						<div id="ListPrice1" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">成交状态：</div>
+						<div id="IsDeal1" class="col-xs-8 col-md-4"> </div>
+					</div>
+					<div id="notice-type-4" class="row">
+						<div class="col-xs-4 col-md-2">项目编号：</div>
+						<div id="ProjectCode4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">交易品种：</div>
+						<div id="TransVariety4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">转出方：</div>
+						<div id="Transferor4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">受让方：</div>
+						<div id="Transferee4" class="col-xs-8 col-md-4"></div>
+						<div class="col-xs-4 col-md-2">成交时间：</div>
+						<div id="BiddingDate4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转面积：	</div>
+						<div id="RollOutArea4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转期限：</div>
+						<div id="RollOutYear4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转价格：</div>
+						<div id="ListPrice4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转方式：</div>
+						<div id="RollOutMode4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">标的区域：	</div>
+						<div id="LocatArea4" class="col-xs-8 col-md-4"> </div>
+						<div class="col-xs-4 col-md-2">流转用途：</div>
+						<div id="RollOutUse4" class="col-xs-8 col-md-4"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

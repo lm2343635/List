@@ -1,0 +1,67 @@
+#cate30 .mainmenu {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    overflow: hidden;
+    list-style: none outside none;
+}
+
+#cate30 .mainmenu li {
+    width: 50%;
+    float: left;
+    display: block;
+    margin-right: -0.5px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#cate30 .mainmenu li a {
+    display: block;
+    padding: 0px;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#cate30 .mainmenu li .menubtn {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+#cate30 .mainmenu li .menubtn .menuimg {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    background-color: #F5F5F5;
+}
+
+#cate30 .mainmenu li .menutitle {
+    text-align: center;
+    padding: 5px 30% 5px 10%;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 60%;
+}
+
+#cate30 .mainmenu li div img {
+    height: 145px;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+}

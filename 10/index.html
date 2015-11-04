@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="xwjk-navbar">
+			<div class="navbar-header">
+				<div class="navbar-header-icon">
+					<img src="logo.png">
+				</div>
+				<div class="navbar-header-title">荆门鑫网</div>
+				<div class="navbar-header-button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+			</div>
+			<div class="navbar-collapse">
+				<ul class="navbar-nav">
+					<li><a href="#">一级栏目1</a></li>
+					<li><a href="#">一级栏目2</a></li>
+					<li><a href="#">一级栏目3</a></li>
+					<li><a href="#">一级栏目4</a></li>
+					<li><a href="#">一级栏目5</a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#xwjk-navbar .navbar-header .navbar-header-button").click(function(){
+					if($("#xwjk-navbar .navbar-collapse").css("display")=="none")
+						$("#xwjk-navbar .navbar-collapse").show("normal");
+					else
+						$("#xwjk-navbar .navbar-collapse").hide("normal");
+				});
+			});
+		</script>
+	</body>
+</html>
